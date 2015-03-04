@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - '0.12'
+before_deploy: "npm install -g coffee-script"
+deploy:
+  provider: npm
+  email: "robertwaltonpearce@gmail.com"
+  api_key:
+    secure: SbrAt8ecAjgxmQCNs5T5XdO2qyEzFchM63Ad6jSAxJKLP6O9bhbyzmH79hNFCo+Yai/+WCHiLwUK/33pfaY3HazRETP6wQHpKYKLNHpJOvEoa6K+iOGU5TrTJSC9I0hEqNcZv0cUOnpgANO7BKLGMMCZqJQaz6Jh6OdK7ksfgp4=

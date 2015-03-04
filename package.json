@@ -1,0 +1,40 @@
+{
+  "name": "react-svgicon",
+  "version": "0.0.1",
+  "homepage": "https://github.com/articulate/react-svgicon",
+  "author": "Articulate",
+  "description": "React component for rendering inline SVG icons",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/articulate/react-svgicon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/articulate/react-svgicon/issues"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "icon"
+  ],
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "chai": "^2.1.0",
+    "coffee-script": "^1.9.1",
+    "coffeeify": "^1.0.0",
+    "jsdom": "^4.0.1",
+    "mocha": "^2.1.0",
+    "mocha-jsdom": "^0.2.1",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0"
+  },
+  "scripts": {
+    "build:example": "npm run prepublish && browserify -t coffeeify --extension=\".coffee\" example/coffee/app.coffee > example/bundle.js",
+    "prepublish": "node_modules/.bin/coffee -o lib -c src/*.coffee",
+    "test": "find ./test -name '*.test.coffee' | xargs mocha --harmony --compilers coffee:coffee-script/register --recursive ./test"
+  }
+}
