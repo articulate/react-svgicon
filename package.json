@@ -27,7 +27,7 @@
     "coffee-script": "^1.9.1",
     "coffeeify": "^1.0.0",
     "jsdom": "^4.0.1",
-    "mocha": "^2.1.0",
+    "mocha": "^2.2.0",
     "mocha-jsdom": "^0.2.1",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0"
@@ -35,6 +35,6 @@
   "scripts": {
     "build:example": "npm run prepublish && browserify -t coffeeify --extension=\".coffee\" example/coffee/app.coffee > example/bundle.js",
     "prepublish": "node_modules/.bin/coffee -o lib -c src/*.coffee",
-    "test": "find ./test -name '*.test.coffee' | xargs mocha --harmony --compilers coffee:coffee-script/register --recursive ./test"
+    "test": "find ./test -name '*.test.coffee' | xargs mocha --compilers coffee:coffee-script/register --recursive ./test"
   }
 }
