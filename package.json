@@ -4,6 +4,9 @@
   "homepage": "https://github.com/articulate/react-svgicon",
   "author": "Articulate",
   "description": "React component for rendering inline SVG icons",
+  "contributors": [
+    { "name": "Robert Pearce", "email": "rpearce@articulate.com" }
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
